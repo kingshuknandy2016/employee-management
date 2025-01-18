@@ -2,6 +2,8 @@
 
 This project is a React application that allows you to manage employees. It includes a dashboard with analytics, a user management system, and a role-based access control system.
 
+Live Demo : [Employee Management](https://ubiquitous-faloodeh-5152aa.netlify.app/)
+
 ## Features
 
 - 🚀 Built with Vite for lightning-fast development
