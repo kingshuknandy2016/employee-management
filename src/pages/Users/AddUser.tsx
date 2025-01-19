@@ -46,8 +46,14 @@ export default function AddUser(props: AddUserProps) {
           },
         }}
       >
-        <DialogTitle>Add User</DialogTitle>
-        <DialogContent>
+        <DialogTitle
+          className="text-primary-dark mb-4 text-center  text-3xl"
+          fontFamily={"Droid Sans"}
+          fontWeight={"bold"}
+        >
+          Add User
+        </DialogTitle>
+        <DialogContent sx={{ fontFamily: "Droid Sans" }}>
           <TextField
             autoFocus
             required
@@ -113,8 +119,8 @@ export default function AddUser(props: AddUserProps) {
               required
               margin="dense"
               id="active"
-              name="active"
-              label="Active"
+              name="status"
+              label="Status"
               value={active}
               onChange={(e) => setActive(e.target.value as State)}
               sx={{ width: "47%" }}
@@ -162,6 +168,7 @@ export default function AddUser(props: AddUserProps) {
             Add User
           </Button>
         </DialogActions>
+        <Box sx={{ height: "15px" }} />
       </Dialog>
     </React.Fragment>
   );
